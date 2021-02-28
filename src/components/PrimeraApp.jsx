@@ -1,7 +1,7 @@
 import React from 'react';
 
 //Functional Component
-const PrimeraApp =  () => {
+const PrimeraApp = ({ title }) => {
 
     const saludo = {
         "name": 'Francisco',
@@ -11,7 +11,8 @@ const PrimeraApp =  () => {
     return <>
         <h1>Hola</h1>
         <p> Francisco </p>
-        <h5>{ JSON.stringify(saludo) }</h5>
+        <p>{title}</p>
+        <h5>{JSON.stringify(saludo)}</h5>
     </>
 }
 

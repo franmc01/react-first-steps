@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Footer from './components/Footer';
 import PrimeraApp from './components/PrimeraApp';
 
 
 const App = () => {
+
+     const anio = new Date().getFullYear();
+
      return (
           <Fragment>
-               <PrimeraApp />
-               
-               <Footer />
+               <PrimeraApp title="Guaguita xD" />
+
+               <Footer anioActual={anio} />
           </Fragment>
      )
 }
