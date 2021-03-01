@@ -4,7 +4,7 @@ const Producto = ({ producto, carrito, agregarCarrito, productos }) => {
 
     const addCheckout = (id) => {
         const productoSelected = productos.filter(producto => producto.id === id);
-        // carrito = 
+        agregarCarrito([...carrito, ...productoSelected]);
 
     }
 

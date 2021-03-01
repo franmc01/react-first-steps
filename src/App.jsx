@@ -6,7 +6,7 @@ import Producto from './components/Producto'
 const App = () => {
 
      //Crear un listado de productos
-     const [productos, setProductos] = useState([
+     const [productos, agregarProductos] = useState([
           { id: 1, name: 'Licuadora', price: 200 },
           { id: 2, name: 'Batidora', price: 300 },
           { id: 3, name: 'Lavadora', price: 400 },
