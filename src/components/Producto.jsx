@@ -1,9 +1,11 @@
 import React from 'react'
 
-const Producto = ({ producto }) => {
+const Producto = ({ producto, carrito, agregarCarrito, productos }) => {
 
     const addCheckout = (id) => {
-        console.log('Comprando', id)
+        const productoSelected = productos.filter(producto => producto.id === id);
+        // carrito = 
+
     }
 
 
@@ -11,7 +13,7 @@ const Producto = ({ producto }) => {
         <div className="producto">
             <hr />
             <p>{producto.name} - {producto.price}</p>
-            <button type="button" onClick={ () => addCheckout(producto.id)} >Añadir al carrito</button>
+            <button type="button" onClick={() => addCheckout(producto.id)} >Añadir al carrito</button>
             <hr />
         </div>
     );

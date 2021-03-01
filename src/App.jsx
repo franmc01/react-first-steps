@@ -12,7 +12,11 @@ const App = () => {
           { id: 3, name: 'Lavadora', price: 400 },
           { id: 4, name: 'Aspiradora', price: 250 },
           { id: 5, name: 'Cocina', price: 100 },
-     ])
+     ]);
+
+
+     //useState para un carrito de compra
+     const [ carrito, agregarCarrito ] = useState([]);
 
      //Obtener el año actual
      const anio = new Date().getFullYear();
@@ -25,8 +29,14 @@ const App = () => {
 
                { 
                    productos.map((producto) => { 
-                        return <Producto key={producto.id} producto={producto} /> 
-                   }) 
+                        return <Producto 
+                                   key={producto.id} 
+                                   productos={productos} 
+                                   producto={producto} 
+                                   carrito={carrito} 
+                                   agregarCarrito={agregarCarrito} 
+                              /> 
+                   })
                }
 
                <Footer anioActual={anio} />
