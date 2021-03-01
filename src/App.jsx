@@ -2,6 +2,7 @@ import React, { Fragment, useState } from 'react'
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Producto from './components/Producto'
+import Carrito from './components/Carrito'
 
 const App = () => {
 
@@ -38,6 +39,7 @@ const App = () => {
                               /> 
                    })
                }
+               <Carrito carrito={carrito} />
 
                <Footer anioActual={anio} />
           </Fragment>

@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import App from './App.jsx';
-import './index.css';
+// import './index.css';
 
 
 const divRoot = document.querySelector('#root');
