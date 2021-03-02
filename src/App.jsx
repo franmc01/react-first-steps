@@ -39,7 +39,8 @@ const App = () => {
                               /> 
                    })
                }
-               <Carrito carrito={carrito} />
+               <Carrito carrito={carrito} 
+                        agregarCarrito={agregarCarrito} />
 
                <Footer anioActual={anio} />
           </Fragment>
